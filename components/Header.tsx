@@ -87,7 +87,7 @@ export const Header: React.FC = () => {
           onClick={(e) => handleNavClick(e, '#home')}
           className="flex-shrink-0 hover:opacity-80 transition-opacity"
         >
-          <Logo />
+          <Logo className="h-14 md:h-16" />
         </a>
 
         {/* Desktop Nav */}
@@ -113,7 +113,7 @@ export const Header: React.FC = () => {
           <a 
             href="#contact"
             onClick={(e) => handleNavClick(e, '#contact')}
-            className="px-6 py-2.5 text-sm font-bold text-dstl-dark bg-dstl-accent hover:bg-cyan-300 rounded-full transition-all shadow-[0_0_15px_rgba(34,211,238,0.3)] hover:shadow-[0_0_25px_rgba(34,211,238,0.6)] hover:-translate-y-0.5"
+            className="px-6 py-2.5 text-sm font-bold text-dstl-dark bg-dstl-accent hover:bg-dstl-teal rounded-full transition-all shadow-[0_0_15px_rgba(98,227,245,0.3)] hover:shadow-[0_0_25px_rgba(98,227,245,0.6)] hover:-translate-y-0.5"
           >
             Contact Us
           </a>

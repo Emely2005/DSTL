@@ -1,20 +1,15 @@
 import React from 'react';
 
 export const Logo: React.FC<{ className?: string }> = ({ className = "h-12" }) => {
-  // IMPORTANT: Since I cannot upload files directly, you must save your logo image
-  // as 'logo.png' in your project's public folder for this to work.
-  // I have set the path to '/logo.png'.
-  const logoUrl = "/logo.png";
-  
+  const logoImage = new URL('./LOGO.png', import.meta.url).href;
+
   return (
-    <img 
-      src={logoUrl}
-      alt="DSTL - Data Space Technologies" 
-      className={`object-contain ${className}`}
-      onError={(e) => {
-        // Fallback if image is missing
-        e.currentTarget.src = "https://placehold.co/240x80/020617/22d3ee/png?text=DSTL+DATA+SPACE&font=montserrat";
-      }}
-    />
+    <div className="rounded-2xl p-1.5 bg-dstl-navy/65 border border-dstl-accent/25 shadow-[0_0_22px_rgba(98,227,245,0.25),0_8px_30px_rgba(46,105,255,0.25)]">
+      <img
+        src={logoImage}
+        alt="DSTL - Data Space Technologies"
+        className={`w-auto object-contain rounded-xl ${className}`}
+      />
+    </div>
   );
 };

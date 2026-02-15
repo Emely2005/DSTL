@@ -1,5 +1,4 @@
 import React from 'react';
-import { Logo } from './Logo';
 import { Linkedin, Twitter, Facebook } from 'lucide-react';
 
 export const Footer: React.FC = () => {
@@ -9,7 +8,14 @@ export const Footer: React.FC = () => {
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           
           <div className="col-span-1 md:col-span-2 space-y-4">
-            <Logo />
+            <div className="inline-block rounded-xl border border-dstl-accent/25 bg-dstl-navy/60 px-4 py-3 shadow-[0_0_18px_rgba(98,227,245,0.2)]">
+              <p className="text-xl md:text-2xl font-extrabold tracking-wide text-white leading-tight">
+                DSTL
+              </p>
+              <p className="text-sm md:text-base tracking-[0.18em] uppercase text-dstl-cyan mt-1">
+                Data Space Technologies Ltd
+              </p>
+            </div>
             <p className="text-slate-400 text-sm max-w-xs leading-relaxed mt-4">
               Africa's most trusted data science partner. We empower organizations to make smarter decisions through secure, reliable, and intelligent data systems.
             </p>

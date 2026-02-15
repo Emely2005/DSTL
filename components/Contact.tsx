@@ -105,7 +105,7 @@ export const Contact: React.FC = () => {
 
               <button 
                 type="submit"
-                className="w-full py-4 bg-dstl-accent hover:bg-cyan-300 text-dstl-dark font-bold rounded-lg transition-all flex items-center justify-center gap-2"
+                className="w-full py-4 bg-dstl-accent hover:bg-dstl-teal text-dstl-dark font-bold rounded-lg transition-all flex items-center justify-center gap-2"
               >
                 Send Message
                 <Send size={18} />
