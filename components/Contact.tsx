@@ -2,11 +2,6 @@ import React from 'react';
 import { Mail, MapPin, Phone, Send } from 'lucide-react';
 
 export const Contact: React.FC = () => {
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    alert("Thank you for contacting DSTL. We will get back to you shortly.");
-  };
-
   return (
     <section id="contact" className="py-24 bg-gradient-to-b from-dstl-navy to-dstl-dark scroll-mt-24">
       <div className="container mx-auto px-6">
@@ -38,7 +33,12 @@ export const Contact: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="text-white font-bold text-lg">Email Us</h3>
-                  <p className="text-slate-400">info@dstl.rw</p>
+                  <a
+                    href="mailto:dataspacetechnologies4@gmail.com"
+                    className="text-slate-400 hover:text-dstl-accent transition-colors"
+                  >
+                    dataspacetechnologies4@gmail.com
+                  </a>
                   <p className="text-slate-500 text-sm">For general inquiries</p>
                 </div>
               </div>
@@ -49,7 +49,7 @@ export const Contact: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="text-white font-bold text-lg">Call Us</h3>
-                  <p className="text-slate-400">+250 788 123 456</p>
+                  <p className="text-slate-400">+250798802169</p>
                   <p className="text-slate-500 text-sm">Mon-Fri from 8am to 5pm</p>
                 </div>
               </div>
@@ -58,13 +58,22 @@ export const Contact: React.FC = () => {
 
           {/* Form Side */}
           <div className="glass-card p-8 rounded-2xl border border-white/10">
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
+              className="space-y-6"
+            >
+              <input type="hidden" name="form-name" value="contact" />
+              <input type="hidden" name="bot-field" />
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <label htmlFor="name" className="text-sm font-medium text-slate-300">Full Name</label>
                   <input 
                     type="text" 
                     id="name"
+                    name="fullName"
                     className="w-full bg-slate-900/50 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-dstl-accent focus:ring-1 focus:ring-dstl-accent transition-all"
                     placeholder="John Doe"
                     required 
@@ -75,6 +84,7 @@ export const Contact: React.FC = () => {
                   <input 
                     type="email" 
                     id="email"
+                    name="email"
                     className="w-full bg-slate-900/50 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-dstl-accent focus:ring-1 focus:ring-dstl-accent transition-all"
                     placeholder="john@company.com"
                     required 
@@ -87,6 +97,7 @@ export const Contact: React.FC = () => {
                 <input 
                   type="text" 
                   id="company"
+                  name="company"
                   className="w-full bg-slate-900/50 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-dstl-accent focus:ring-1 focus:ring-dstl-accent transition-all"
                   placeholder="Your Organization Ltd."
                 />
@@ -96,6 +107,7 @@ export const Contact: React.FC = () => {
                 <label htmlFor="message" className="text-sm font-medium text-slate-300">Message</label>
                 <textarea 
                   id="message"
+                  name="message"
                   rows={4}
                   className="w-full bg-slate-900/50 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-dstl-accent focus:ring-1 focus:ring-dstl-accent transition-all"
                   placeholder="Tell us about your data needs..."
