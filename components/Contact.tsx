@@ -61,6 +61,8 @@ export const Contact: React.FC = () => {
             <form
               name="contact"
               method="POST"
+              action="/"
+              netlify
               data-netlify="true"
               data-netlify-honeypot="bot-field"
               className="space-y-6"
