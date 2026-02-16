@@ -1,12 +1,16 @@
 import React from 'react';
 import { TeamMember } from '../types';
 
-// Placeholder images using reliable external placeholder service
+const CEOImage = new URL('./CEO_image.jpg', import.meta.url).href;
+const CFOImage = new URL('./CFO_image.png', import.meta.url).href;
+const COOImage = new URL('./COO_image.jpg', import.meta.url).href;
+const CTOImage = new URL('./CTO_image.png', import.meta.url).href;
+
 const team: TeamMember[] = [
-  { name: "Executive Leader", role: "Chief Executive Officer", imageUrl: "https://picsum.photos/seed/ceo1/400/400?grayscale" },
-  { name: "Financial Director", role: "Chief Financial Officer", imageUrl: "https://picsum.photos/seed/cfo2/400/400?grayscale" },
-  { name: "Operations Lead", role: "Chief Operating Officer", imageUrl: "https://picsum.photos/seed/coo3/400/400?grayscale" },
-  { name: "Tech Innovator", role: "Chief Technology Officer", imageUrl: "https://picsum.photos/seed/cto4/400/400?grayscale" },
+  { name: "Executive Leader", role: "Chief Executive Officer", imageUrl: CEOImage },
+  { name: "Financial Director", role: "Chief Financial Officer", imageUrl: CFOImage },
+  { name: "Operations Lead", role: "Chief Operating Officer", imageUrl: COOImage },
+  { name: "Tech Innovator", role: "Chief Technology Officer", imageUrl: CTOImage },
 ];
 
 export const Team: React.FC = () => {
