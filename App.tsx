@@ -4,7 +4,6 @@ import { Hero } from './components/Hero';
 import { TrustedBy } from './components/TrustedBy';
 import { About } from './components/About';
 import { Solutions } from './components/Solutions';
-import { Process } from './components/Process';
 import { MissionVision } from './components/MissionVision';
 import { Team } from './components/Team';
 import { Contact } from './components/Contact';
@@ -19,7 +18,6 @@ const App: React.FC = () => {
         <TrustedBy />
         <About />
         <Solutions />
-        <Process />
         <MissionVision />
         <Team />
         <Contact />

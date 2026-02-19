@@ -36,7 +36,7 @@ export const Hero: React.FC = () => {
           </h1>
           
           <p className="text-lg text-slate-400 leading-relaxed max-w-3xl mx-auto">
-            We are a Rwanda-based data and analytics company providing secure infrastructure for inventory management, real-time analytics-based insights, and AI solutions that help organizations reduce costs and manage risk.
+            We are a Rwanda-based data and analytics company providing secure infrastructure for inventory management, real-time analytics-based insights, and AI solutions that empower organizations to make data-driven decisions, and improve their operational efficiency.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -69,8 +69,8 @@ export const Hero: React.FC = () => {
               </p>
               <div className="mt-6 flex flex-wrap justify-center gap-3">
                 <span className="px-3 py-1 rounded-full text-xs md:text-sm bg-dstl-blue/20 text-dstl-cyan border border-dstl-cyan/30">Real-Time Analytics</span>
-                <span className="px-3 py-1 rounded-full text-xs md:text-sm bg-dstl-blue/20 text-dstl-cyan border border-dstl-cyan/30">AI Insights</span>
-                <span className="px-3 py-1 rounded-full text-xs md:text-sm bg-dstl-blue/20 text-dstl-cyan border border-dstl-cyan/30">Risk Optimization</span>
+                <span className="px-3 py-1 rounded-full text-xs md:text-sm bg-dstl-blue/20 text-dstl-cyan border border-dstl-cyan/30">Data-Driven Insights</span>
+                <span className="px-3 py-1 rounded-full text-xs md:text-sm bg-dstl-blue/20 text-dstl-cyan border border-dstl-cyan/30">Stock Management</span>
               </div>
             </div>
           </div>

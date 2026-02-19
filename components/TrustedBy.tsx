@@ -2,7 +2,7 @@ import React from 'react';
 
 // Using text placeholders styled as logos since we don't have real svg assets
 const partners = [
-  "TechGlobal", "DataFlow Africa", "SecureNet", "Future Finance", "EcoEnergy", "HealthPlus"
+  "New Technology Center Ltd", "Royal Grain Supply Ltd"
 ];
 
 export const TrustedBy: React.FC = () => {

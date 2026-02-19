@@ -5,22 +5,22 @@ import { Solution } from '../types';
 const solutions: Solution[] = [
   {
     title: "Real-Time Analytics",
-    description: "Instant access to actionable insights. We build dashboards and pipelines that let you see your business performance as it happens.",
+    description: "Instant access to actionable insights. We build dashboards, reports, and pipelines that let you see your business performance as it happens.",
     icon: BarChart2
   },
   {
     title: "Secure Data Infrastructure",
-    description: "Robust, scalable, and compliant data architecture designed to protect your most valuable asset while ensuring high availability.",
+    description: "Robust, scalable, and compliant data infrastructure designed to record, store, and protect your most valuable asset while ensuring high availability whenever it is needed.",
     icon: ShieldCheck
   },
   {
-    title: "AI & Machine Learning",
+    title: "AI & Machine Learning ",
     description: "Predictive models and intelligent automation that drive efficiency and unlock new opportunities for growth and innovation.",
     icon: Brain
   },
   {
     title: "Inventory & Risk Optimization",
-    description: "Advanced algorithms to minimize stockouts, reduce carrying costs, and identify operational risks before they impact your bottom line.",
+    description: "Advanced algorithms to manage inventory, minimize stockouts, and identify operational risks before they impact your bottom line.",
     icon: TrendingUp
   }
 ];
@@ -30,10 +30,10 @@ export const Solutions: React.FC = () => {
     <section id="solutions" className="py-24 bg-gradient-to-b from-dstl-dark to-dstl-navy relative scroll-mt-24">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <span className="text-dstl-accent font-bold tracking-wider uppercase text-sm">What We Do</span>
+          <span className="text-dstl-accent font-bold tracking-wider uppercase text-sm">What We Offer</span>
           <h2 className="text-3xl md:text-4xl font-bold text-white mt-3">Our Solutions</h2>
           <p className="text-slate-400 mt-4 max-w-2xl mx-auto">
-            Comprehensive technology services designed to transform your raw data into your competitive advantage.
+            Comprehensive technology services designed to transform your raw data into actionable insights that will lead to the peak.
           </p>
         </div>
 
